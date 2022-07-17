@@ -1,0 +1,180 @@
+<html>
+
+<head>
+    <center><div id="box"></div></center>
+    <br>
+    <center><input type="text" id="myinput" value=''   cols="80" rows="15" style="width:550px; height:30px;text-align:center;"></center>
+</head>
+
+<body>   
+    
+<center><p><input id="btnOperate" type="button" value="選擇及複制" onclick="static_num()" align="center" /></p></center>
+
+
+    <style>
+        .demo {
+            width:60%;
+            border:1px solid #C0C0C0;
+            border-collapse:collapse;
+            padding:1px;
+        }
+        .demo th {
+            border:1px solid #C0C0C0;
+            padding:1px;
+            background:#F0F0F0;
+        }
+        .demo td {
+            border:1px solid #C0C0C0;
+            padding:1px;
+        }
+    </style>
+    <table class="demo" align="center">
+        <caption></caption>
+        <thead>
+        <tr>
+            <th>中區</th>
+            <th>北區</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>    
+                <p><input type="checkbox" name="category" value="塔石體育館A館" />塔石體育館A館</p>
+                <p><input type="checkbox" name="category" value="塔石體育館B館" />塔石體育館B館</p> 
+                <p><input type="checkbox" name="category" value="婦女聯合總會綜合服務大樓" />婦女聯合總會綜合服務大樓</p>   
+                <p><input type="checkbox" name="category" value="濠江中學附屬小學" />濠江中學附屬小學</p>  
+                <p><input type="checkbox" name="category" value="澳門培正中學" />澳門培正中學</p>       
+                <p><input type="checkbox" name="category" value="信和醫療中心" />信和醫療中心</p> 
+                <p><input type="checkbox" name="category" value="鮑思高粵華小學" />鮑思高粵華小學</p>     
+                <p><input type="checkbox" name="category" value="鏡湖醫院禮堂" />鏡湖醫院禮堂</p> 
+                <p><input type="checkbox" name="category" value="嘉諾撒聖心英文中學" />嘉諾撒聖心英文中學</p>  
+                <p><input type="checkbox" name="category" value="利瑪竇中學" />利瑪竇中學</p>  
+            </td>
+            <td>  
+                <p><input type="checkbox" name="category" value="望廈體育中心一樓" />望廈體育中心一樓</p>   
+                <p><input type="checkbox" name="category" value="東南學校(中學部)" />東南學校(中學部)</p>  
+                <p><input type="checkbox" name="category" value="鄭觀應公立學校" />鄭觀應公立學校</p>    
+                <p><input type="checkbox" name="category" value="工人體育場A館一樓" />工人體育場A館一樓</p>    
+                <p><input type="checkbox" name="category" value="鏡平學校（中學部）" />鏡平學校（中學部）</p>    
+                <p><input type="checkbox" name="category" value="中葡職業技術學校體育館" />中葡職業技術學校體育館</p>    
+                <p><input type="checkbox" name="category" value="聖公會（澳門）蔡高中學" />聖公會（澳門）蔡高中學</p> 
+                <p><input type="checkbox" name="category" value="聖若瑟教區中學第二校" />聖若瑟教區中學第二校</p>   
+                <p><input type="checkbox" name="category" value="澳門浸信中學" />澳門浸信中學</p>  
+                <p><input type="checkbox" name="category" value="澳門江門同鄉會頤康活動中心" />澳門江門同鄉會頤康活動中心</p>  
+                <p><input type="checkbox" name="category" value="澳門坊眾學校" />澳門坊眾學校</p>     
+
+
+
+            </td>
+        </tr>    
+        <tbody>
+    </table>
+
+
+    <style>
+        .demo2 {
+            width:60%;
+            border:1px solid #C0C0C0;
+            border-collapse:collapse;
+            padding:1px;
+        }
+        .demo2 th {
+            border:1px solid #C0C0C0;
+            padding:1px;
+            background:#F0F0F0;
+        }
+        .demo2 td {
+            border:1px solid #C0C0C0;
+            padding:1px;
+        }
+    </style> 
+    <table class="demo2" align="center">
+        <caption></caption>
+        <thead>
+        <tr>
+            <th>新口岸區及青洲</th>
+            <th>路氹</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>    
+                <p><input type="checkbox" name="category" value="澳門理工大學懷遠樓展覽廳" />澳門理工大學懷遠樓展覽廳</p>   
+                <p><input type="checkbox" name="category" value="綜藝館" />綜藝館</p>  
+                <p><input type="checkbox" name="category" value="澳門美高梅大宴會廳" />澳門美高梅大宴會廳</p>  
+                <p><input type="checkbox" name="category" value="澳門文化中心" />澳門文化中心</p>   
+                <p><input type="checkbox" name="category" value="慈幼中學" />慈幼中學</p>
+                <p><input type="checkbox" name="category" value="海星中學" />海星中學</p>   
+                <p><input type="checkbox" name="category" value="海事工房1號及2號" />海事工房1號及2號</p>   
+                <p><input type="checkbox" name="category" value="沙梨頭活動中心" />沙梨頭活動中心</p> 
+                <p><input type="checkbox" name="category" value="廣大中學" />廣大中學</p>   
+                <p><input type="checkbox" name="category" value="街坊會聯合總會社區服務大樓" />街坊會聯合總會社區服務大樓 </p>
+                <p><input type="checkbox" name="category" value="澳門街總綠楊長者日間護理中心" />澳門街總綠楊長者日間護理中心</p>  
+                <p><input type="checkbox" name="category" value="青洲坊活動中心" />青洲坊活動中心</p>   
+                <p><input type="checkbox" name="category" value="勞校中學附屬幼稚園" />勞校中學附屬幼稚園</p>      
+                <p><input type="checkbox" name="category" value="南粵青茂口岸" />南粵青茂口岸</p>
+                <p><input type="checkbox" name="category" value="聖若瑟教區中學第六校" />聖若瑟教區中學第六校</p>  
+
+
+            </td>
+            <td>    
+                <p><input type="checkbox" name="category" value="奧林匹克體育中心室內體育館" />奧林匹克體育中心室內體育館</p>   
+                <p><input type="checkbox" name="category" value="奧林匹克體育中心運動場乒乓球室" />奧林匹克體育中心運動場乒乓球室</p>  
+                <p><input type="checkbox" name="category" value="嘉模會堂" />嘉模會堂</p>  
+                <p><input type="checkbox" name="category" value="教青局親職教育中心(湖畔)" />教青局親職教育中心(湖畔)"</p>  
+                <p><input type="checkbox" name="category" value="北安客運碼頭" />北安客運碼頭</p>
+                <p><input type="checkbox" name="category" value="聖公會氹仔青少年及家庭綜合服務中心" />聖公會氹仔青少年及家庭綜合服務中心</p>  
+                <p><input type="checkbox" name="category" value="威尼斯人展覽館A、B、C館" />威尼斯人展覽館A、B、C館</p>   
+                <p><input type="checkbox" name="category" value="街總石排灣家庭及社區綜合服務中心" />街總石排灣家庭及社區綜合服務中心</p> 
+                <p><input type="checkbox" name="category" value="石排灣公立學校" />石排灣公立學校</p>
+                <p><input type="checkbox" name="category" value="澳門保安部隊高等學校" />澳門保安部隊高等學校</p>   
+                <p><input type="checkbox" name="category" value="澳門大學" />澳門大學</p>  
+                <p><input type="checkbox" name="category" value="科大體育館" />科大體育館</p>  
+
+  
+
+            </td>
+        </tr>    
+        <tbody>
+    </table> 
+
+</body> 
+</div>
+<script>        
+function static_num() 
+{            
+    document.getElementById("btnOperate").onclick = function () {                
+        let box = document.getElementById("box");
+
+        let myinput = document.getElementById("myinput");
+        var arr = new Array();                
+        var items = document.getElementsByName("category");   
+        let boxHtml = "";              
+        for (i = 0; i < items.length; i++) {                    
+            if (items[i].checked) {                        
+                arr.push(items[i].value);  
+            boxHtml = arr    
+                        
+            }     
+        } 
+
+//         copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+//   /* Copy the text inside the text field */
+//         box.innerHTML=navigator.clipboard.writeText(copyText.value);
+        box.innerHTML = boxHtml;
+        myinput.value = boxHtml;  
+        myinput.select();
+        navigator.clipboard.writeText(myinput.value);           
+    };        
+};    
+</script>
+
+</html>
+
+
+
+#wrapper {
+    width: 800px;
+    margin: 0 auto;
+}
