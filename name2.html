@@ -149,10 +149,14 @@ function static_num()
         let myinput = document.getElementById("myinput");
         var arr = new Array();                
         var items = document.getElementsByName("category");   
-        let boxHtml = "";              
-        for (i = 0; i < items.length; i++) {                    
-            if (items[i].checked) {                        
-                arr.push(items[i].value);  
+        let boxHtml = "";       
+        count=0;       
+        for (i = 0; i < items.length; i++) {         
+        
+            if (items[i].checked) {      
+                count++                     
+                arr.push(' '+count+'.'+items[i].value); 
+                
             boxHtml = arr    
                         
             }     
